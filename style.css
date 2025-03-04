@@ -1,0 +1,177 @@
+/* Implementações ------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; Impede rolagem lateral */
+}
+
+:root {
+    --topheader: #162028;
+    --textmenu: #425564;
+    --textgeral: #555;
+    --fundoboximg: #003d52;
+    --fundofooter: #0b171f;
+    --textfooter: #6f8597;
+
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('font/ViaodaLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/Roboto-LightItalic.ttf');
+}
+
+/* Topo do site ------------------------------------ */
+
+.hero {
+    display: flex;
+    background-color: var(--topheader);
+    padding: 18px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.hero-top {
+    font-size: 27px;
+    font-family: 'Titulo';
+    color: #fff;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+.hero-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: sans-serif;
+    gap: 16px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding-right: 32px;
+}
+
+.hero-nav a {
+    text-decoration: none;
+    color: var(--textmenu);
+}
+
+.hero-nav a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* Corpo do site ------------------------------------*/
+
+/* .hero-banner {
+    width: 100vw;  
+    height: 90vh;  
+    background-image: url('imagens/topo.jpg');
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+} */
+
+img {
+    width: 100%;
+    height: 650px;
+}
+
+.scope-content1, .scope-image {
+    margin: 80px auto 0;
+    width: 90%;
+    
+}
+
+.scope-content1 h1 {
+    text-align: center;
+    font-family: 'Titulo', sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    padding-bottom: 35px;
+}
+
+.scope-text {
+    line-height: 1.5;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+}
+
+.modelos img {
+    width: 320px; /* LARGURA*/
+    height: 300px; /* ALTURA */
+}
+
+.scope-image .modelos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text-modelos {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 5px;
+}
+
+.text-vestim {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    color: var(--textgeral)
+}
+
+.scope-content2 {
+    background-image: url(imagens/bg_detalhe.png);
+    background-color: #003d52;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 1px;
+    
+}
+
+.scope-content2 {
+    height: 550px;
+}
+
+.scope-content2 h2 {
+    color: #fff;
+    font-size: 55px;
+    font-family: 'Titulo';
+    font-weight: normal;
+    margin: 120px 120px 0;
+
+}
+
+.scope-content2 p {
+    color: #fff;
+    margin: 55px 120px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+
+}
+
+.last-stop {
+    background-color: var(--fundofooter);
+    height: 65px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.last-stop p {
+    color: var(--textfooter);   
+    letter-spacing: 1.5px;
+
+}
